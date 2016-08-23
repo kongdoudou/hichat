@@ -5,7 +5,7 @@ var app=express();
 var server=http.createServer(app);
 var io=require("socket.io").listen(server);
 var users=[];
-app.use("/",express.static(__dirname+'/www'));
+app.use('/__engine/1/ping',express.static(__dirname+'/www'));
 server.listen(3000);
 console.log("server started");
 
