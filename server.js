@@ -6,7 +6,7 @@ var server=http.createServer(app);
 var io=require("socket.io").listen(server);
 var users=[];
 app.use("/",express.static(__dirname+'/www'));
-server.listen(8080);
+server.listen(3000);
 console.log("server started");
 
 io.on('connection',function(socket){
