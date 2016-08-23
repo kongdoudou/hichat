@@ -1,6 +1,8 @@
 var http=require("http");
 var express=require("express");
+var AV = require('leanengine');
 var app=express();
+AV.initialize('5uaPmDjBQg88a3ib1i56eXwk-gzGzoHsz', 'LVEroqXUazHvb7DJcagfN3uH');
 
 var server=http.createServer(app);
 var io=require("socket.io").listen(server);
